@@ -38,7 +38,7 @@ jobs:
         # Use Docker `latest` tag convention
         [ "$VERSION" == "master" ] && VERSION=latest
         
-        DOCKER_REG="docker.io/iammeter/hello"
+        DOCKER_REG="docker.io/iammeter/iammeter"
         echo IMAGE_ID=$DOCKER_REG
         echo VERSION=$VERSION
         
