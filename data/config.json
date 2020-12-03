@@ -10,7 +10,7 @@
   },
   "ConnectionStrings": {
     "DefaultConnectionStrings": "host=127.0.0.1;port=5432;database=test;user id=postgres;password=123456",
-    "SqlLiteConnectionString": "Data Source=App_Data/data.db",
+    "SqlLiteConnectionString": "Data Source=data/data.db",
     "SqlServerConnectionString": "Data Source=.;Initial Catalog=test;Persist Security Info=True;User ID=sa;Password=123456;Max Pool Size=10;MultipleActiveResultSets=True"
   },
   "AllowedHosts": "*",
