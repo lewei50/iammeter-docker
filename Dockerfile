@@ -1,5 +1,14 @@
-FROM alpine
 
-RUN uname -a > /os.txt
+FROM mcr.microsoft.com/dotnet/aspnet:5.0
 
-CMD cat /os.txt
+
+WORKDIR /app
+
+
+COPY . .
+
+
+EXPOSE 5050
+
+
+ENTRYPOINT ["dotnet", "IAMMETER.Local.Web.dll"]

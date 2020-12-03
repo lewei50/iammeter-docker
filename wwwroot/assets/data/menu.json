@@ -1,0 +1,44 @@
+{
+  "menu": [{
+      "route": "dashboard",
+      "name": "dashboard",
+      "type": "link",
+      "icon": "dashboard"
+      
+    },
+    {
+      "route": "place",
+      "name": "place",
+      "type": "sub",
+      "icon": "device_hub",
+      "children": [{
+          "route": "placeList",
+          "name": "placelist",
+          "type": "link"
+        },
+        {
+          "route": "meterList",
+          "name": "meterlist",
+          "type": "link"
+        }
+      ]
+    },
+    {
+      "route": "setting",
+      "name": "profile",
+      "type": "sub",
+      "icon": "account_box",
+      "children": [{
+          "route": "userSetting",
+          "name": "settings",
+          "type": "link"
+        },
+        {
+          "route": "password",
+          "name": "password",
+          "type": "link"
+        }
+      ]
+    }
+  ]
+}
