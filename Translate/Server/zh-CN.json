@@ -27,5 +27,6 @@
 "bll.kdl":"馈电量",
 "place.overview.yield":"发电",
 "place.overview.load":"负载",
-"place.overview.feed-in":"馈网"
+"place.overview.feed-in":"馈网",
+"validate.meter-count-error":"电表数量超过最大限制"
 }

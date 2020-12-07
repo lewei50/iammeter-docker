@@ -27,5 +27,6 @@
 "bll.kdl":"Exported Energy",
 "place.overview.yield":"Yield",
 "place.overview.load":"Load",
-"place.overview.feed-in":"Feed-in"
+"place.overview.feed-in":"Feed-in",
+"validate.meter-count-error":"The number of meters exceeds the maximum limit"
 }
