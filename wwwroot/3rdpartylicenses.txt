@@ -396,6 +396,9 @@ Apache-2.0
    limitations under the License.
 
 
+@aspnet/signalr
+Apache-2.0
+
 @ctrl/tinycolor
 MIT
 Copyright (c) Scott Cooper <scttcper@gmail.com>

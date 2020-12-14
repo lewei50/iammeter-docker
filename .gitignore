@@ -1,2 +1,4 @@
 /data/*
 /Logs/*
+appsettings.Development.json
+config.Development.json
