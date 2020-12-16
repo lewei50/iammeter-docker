@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>IAMMETER.Local.Web</name>
+    </assembly>
+    <members>
+        <member name="T:IAMMETER.Local.Web.AutoMapper.AutomapperConfig.String2ObjectFormatter`1">
+            <summary>
+            将一个字符串序列化成一个实体的方法
+            </summary>
+        </member>
+        <member name="T:IAMMETER.Local.Web.SiteUserValidateMidleware">
+            <summary>
+            对于需要的api自动校验token，并将用户信息放置到httpcontext.items
+            </summary>
+        </member>
+        <member name="T:IAMMETER.Local.Web.Controllers.CommonController">
+            <summary>
+            常用方法
+            </summary>
+        </member>
+        <member name="M:IAMMETER.Local.Web.Controllers.CommonController.TimezoneList">
+            <summary>
+            获取服务器失去列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:IAMMETER.Local.Web.Controllers.PlaceController">
+            <summary>
+            为了兼容设备使用这个controller
+            </summary>
+        </member>
+        <member name="M:IAMMETER.Local.Web.Controllers.PlaceController.Places(System.Nullable{System.Guid},System.Nullable{System.Guid},IAMMETER.Local.DTO.Place.MeterUpdateDTO)">
+            <summary>
+            保存电表
+            </summary>
+            <param name="placeId"></param>
+            <param name="id"></param>
+            <param name="dto"></param>
+            <returns></returns>
+        </member>
+        <member name="T:IAMMETER.Local.Web.Controllers.SensorController">
+            <summary>
+            为了兼容设备使用这个controller
+            </summary>
+        </member>
+        <member name="M:IAMMETER.Local.Web.Controllers.UserController.Login(IAMMETER.Local.DTO.User.UserLoginDTO)">
+            <summary>
+            用户登录
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IAMMETER.Local.Web.Controllers.UserController.User">
+            <summary>
+            获取用户信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IAMMETER.Local.Web.Controllers.UserController.User(IAMMETER.Local.DTO.User.UserSetDTO)">
+            <summary>
+            设置用户
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IAMMETER.Local.Web.Startup.ConfigueMyService(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            自定义的service
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:IAMMETER.Local.Web.Startup.UpdateDatabase(Microsoft.AspNetCore.Builder.IApplicationBuilder)">
+            <summary>
+            自动更新数据库
+            </summary>
+            <param name="app"></param>
+        </member>
+    </members>
+</doc>
