@@ -14,6 +14,15 @@
             对于需要的api自动校验token，并将用户信息放置到httpcontext.items
             </summary>
         </member>
+        <member name="M:IAMMETER.Local.Web.ConfigureSwaggerOptions.#ctor(Microsoft.AspNetCore.Mvc.ApiExplorer.IApiVersionDescriptionProvider)">
+            <summary>
+            Initializes a new instance of the <see cref="T:IAMMETER.Local.Web.ConfigureSwaggerOptions"/> class.
+            </summary>
+            <param name="provider">The <see cref="T:Microsoft.AspNetCore.Mvc.ApiExplorer.IApiVersionDescriptionProvider">provider</see> used to generate Swagger documents.</param>
+        </member>
+        <member name="M:IAMMETER.Local.Web.ConfigureSwaggerOptions.Configure(Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenOptions)">
+            <inheritdoc />
+        </member>
         <member name="T:IAMMETER.Local.Web.Controllers.CommonController">
             <summary>
             常用方法
@@ -21,7 +30,13 @@
         </member>
         <member name="M:IAMMETER.Local.Web.Controllers.CommonController.TimezoneList">
             <summary>
-            获取服务器失去列表
+            Get a list of time zones on the server
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IAMMETER.Local.Web.Controllers.CommonController.AppInfo">
+            <summary>
+            Get application configuration information
             </summary>
             <returns></returns>
         </member>
@@ -30,13 +45,138 @@
             为了兼容设备使用这个controller
             </summary>
         </member>
+        <member name="M:IAMMETER.Local.Web.Controllers.PlaceController.PlaceList">
+            <summary>
+            Get basic information about all places of the user
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IAMMETER.Local.Web.Controllers.PlaceController.PlaceExtraList">
+            <summary>
+            Get all information about all places and all meters of the user
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IAMMETER.Local.Web.Controllers.PlaceController.PlaceGet(System.Nullable{System.Guid})">
+            <summary>
+            Get basic information about one place
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IAMMETER.Local.Web.Controllers.PlaceController.Place(IAMMETER.Local.DTO.Place.PlaceSetDTO,System.Nullable{System.Guid})">
+            <summary>
+            Update place information or add a new place (id:00000000-0000-0000-0000-000000000000)
+            </summary>
+            <param name="id">Place Id</param>
+            <param name="dto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IAMMETER.Local.Web.Controllers.PlaceController.Place(System.Nullable{System.Guid})">
+            <summary>
+            Delete a place by id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IAMMETER.Local.Web.Controllers.PlaceController.PlaceListOverview">
+            <summary>
+            Get overview data for all places
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IAMMETER.Local.Web.Controllers.PlaceController.Places(System.Nullable{System.Guid})">
+            <summary>
+            Get meters in the place
+            </summary>
+            <param name="placeId"></param>
+            <returns></returns>
+        </member>
         <member name="M:IAMMETER.Local.Web.Controllers.PlaceController.Places(System.Nullable{System.Guid},System.Nullable{System.Guid},IAMMETER.Local.DTO.Place.MeterUpdateDTO)">
             <summary>
-            保存电表
+            Save meter information or add a new meter (id:00000000-0000-0000-0000-000000000000)
             </summary>
             <param name="placeId"></param>
             <param name="id"></param>
             <param name="dto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IAMMETER.Local.Web.Controllers.PlaceController.Places(System.Nullable{System.Guid},System.Nullable{System.Guid})">
+            <summary>
+            Delete a meter
+            </summary>
+            <param name="placeId"></param>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IAMMETER.Local.Web.Controllers.PlaceController.CurrentPowers(System.Nullable{System.Guid})">
+            <summary>
+            Get power data for a place containing inverter type meters
+            </summary>
+            <param name="id">Place id</param>
+            <returns></returns>
+        </member>
+        <member name="M:IAMMETER.Local.Web.Controllers.PlaceController.YieldAndBill(System.Nullable{System.Guid},System.String)">
+            <summary>
+            Get yield and bill data for a place containing inverter type meters
+            </summary>
+            <param name="id">Place id</param>
+            <param name="timeType">day or month,day by default</param>
+            <returns></returns>
+        </member>
+        <member name="M:IAMMETER.Local.Web.Controllers.PlaceController.TopEnergy(System.Nullable{System.Guid})">
+            <summary>
+            Get energy data for a place containing grid type meters.
+            </summary>
+            <param name="id">Place id</param>
+            <returns></returns>
+        </member>
+        <member name="M:IAMMETER.Local.Web.Controllers.PlaceController.PowerLine(System.Nullable{System.Guid},System.Nullable{System.DateTime})">
+            <summary>
+            Get power data for a place by date
+            </summary>
+            <param name="id">Place id</param>
+            <param name="date"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IAMMETER.Local.Web.Controllers.PlaceController.EnergyColumn(System.Nullable{System.Guid},System.String)">
+            <summary>
+            Get energy data for a place by time
+            </summary>
+            <param name="id">Place id</param>
+            <param name="time">format: yyyy or yyyy-MM or yyyy-MM-dd or empty(all)</param>
+            <returns></returns>
+        </member>
+        <member name="M:IAMMETER.Local.Web.Controllers.PlaceController.HistoryDataForTable(System.Nullable{System.Guid},System.Nullable{System.Guid},System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Get historical data of a meter for table display
+            </summary>
+            <param name="id">Place id</param>
+            <param name="meterId"></param>
+            <param name="startTime"></param>
+            <param name="endTime"></param>
+            <param name="page">default:1</param>
+            <param name="pageSize">default:20</param>
+            <param name="sort">0:asc; 1:desc</param>
+            <returns></returns>
+        </member>
+        <member name="M:IAMMETER.Local.Web.Controllers.PlaceController.HistoryDataForChart(System.Nullable{System.Guid},System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.String)">
+            <summary>
+            Get historical data of meters for chart display
+            </summary>
+            <param name="id"></param>
+            <param name="meterIds"></param>
+            <param name="startTime"></param>
+            <param name="endTime"></param>
+            <param name="selectedColumn"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IAMMETER.Local.Web.Controllers.PlaceController.EnergyBill(System.Nullable{System.Guid},System.String)">
+            <summary>
+            Get energy and bill data for a place
+            </summary>
+            <param name="id"></param>
+            <param name="time">format: yyyy or yyyy-MM or yyyy-MM-dd or empty(all)</param>
             <returns></returns>
         </member>
         <member name="T:IAMMETER.Local.Web.Controllers.SensorController">
@@ -44,22 +184,64 @@
             为了兼容设备使用这个controller
             </summary>
         </member>
+        <member name="M:IAMMETER.Local.Web.Controllers.SensorController.UploadSensor(IAMMETER.Local.DTO.Place.UploadDataDTO)">
+            <summary>
+            Upload meter data
+            </summary>
+            /// <remarks>
+            Sample request:
+            
+                Single phase:
+                {
+                    "sn": "1234",
+                    "data": [10,20,30,40,50]
+                }
+                Three phase:
+                {
+                    "sn": "1234",
+                    "datas": [[11,21,31,41,51],[12,22,32,42,52],[13,23,33,43,53]]
+                }
+                
+            </remarks>
+            <param name="dto"></param>
+            <returns></returns>
+        </member>
         <member name="M:IAMMETER.Local.Web.Controllers.UserController.Login(IAMMETER.Local.DTO.User.UserLoginDTO)">
             <summary>
-            用户登录
+            User login to get token.
             </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IAMMETER.Local.Web.Controllers.UserController.Password(IAMMETER.Local.DTO.User.UserPasswordDTO)">
+            <summary>
+            Modify user login password
+            </summary>
+            <param name="dto"></param>
             <returns></returns>
         </member>
         <member name="M:IAMMETER.Local.Web.Controllers.UserController.User">
             <summary>
-            获取用户信息
+            Get user information
             </summary>
             <returns></returns>
         </member>
         <member name="M:IAMMETER.Local.Web.Controllers.UserController.User(IAMMETER.Local.DTO.User.UserSetDTO)">
             <summary>
-            设置用户
+            Set user information
             </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IAMMETER.Local.Web.Controllers.UserController.Logout">
+            <summary>
+            User logout
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IAMMETER.Local.Web.Controllers.UserController.SaveLang(System.String)">
+            <summary>
+            Set the language used by the user
+            </summary>
+            <param name="lang"></param>
             <returns></returns>
         </member>
         <member name="M:IAMMETER.Local.Web.Startup.ConfigueMyService(Microsoft.Extensions.DependencyInjection.IServiceCollection)">

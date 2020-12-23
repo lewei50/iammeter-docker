@@ -128,5 +128,7 @@
 "place.overview.energy-today":"Today's Energy",
 "place.overview.energy-monthly":"Monthly Energy",
 "place.overview.energy-yearly":"Yearly Energy",
-"place.overview.energy-total":"Total Energy"
+"place.overview.energy-total":"Total Energy",
+"bll.realtime-line":"Real-time line",
+"common.edit":"Edit"
 }
