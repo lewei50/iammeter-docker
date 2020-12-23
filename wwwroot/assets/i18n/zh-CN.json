@@ -128,5 +128,7 @@
 "place.overview.energy-today":"当天能耗",
 "place.overview.energy-monthly":"当月能耗",
 "place.overview.energy-yearly":"当年能耗",
-"place.overview.energy-total":"总用能耗"
+"place.overview.energy-total":"总用能耗",
+"bll.realtime-line":"实时曲线",
+"common.edit":"编辑"
 }
