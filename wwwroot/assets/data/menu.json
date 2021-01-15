@@ -24,6 +24,18 @@
       ]
     },
     {
+      "route": "extension",
+      "name": "extension",
+      "type": "sub",
+      "icon": "extension",
+      "children": [{
+          "route": "pvoutput",
+          "name": "pvoutput",
+          "type": "link"
+        }
+      ]
+    },
+    {
       "route": "setting",
       "name": "profile",
       "type": "sub",

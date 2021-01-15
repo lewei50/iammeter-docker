@@ -40,6 +40,21 @@
             </summary>
             <returns></returns>
         </member>
+        <member name="M:IAMMETER.Local.Web.Controllers.ExtensionsController.Save(IAMMETER.Local.DTO.Place.ExtensionSetDTO,System.Nullable{System.Guid})">
+            <summary>
+            Update place information or add a new place (id:00000000-0000-0000-0000-000000000000)
+            </summary>
+            <param name="id">Place Id</param>
+            <param name="dto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IAMMETER.Local.Web.Controllers.ExtensionsController.Delete(System.Nullable{System.Guid})">
+            <summary>
+            Delete a place by id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
         <member name="T:IAMMETER.Local.Web.Controllers.PlaceController">
             <summary>
             为了兼容设备使用这个controller
@@ -255,6 +270,21 @@
             自动更新数据库
             </summary>
             <param name="app"></param>
+        </member>
+        <member name="M:IAMMETER.Local.Web.Tasks.Jobs.PVOutPutJob.Execute(Quartz.IJobExecutionContext)">
+            <summary>
+            找到
+            </summary>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IAMMETER.Local.Web.Tasks.Jobs.PVOutPutJob.GetDiffInDay(System.Guid,System.DateTime)">
+            <summary>
+            获取指定时间当天的累计差值
+            </summary>
+            <param name="meterId"></param>
+            <param name="dt"></param>
+            <returns></returns>
         </member>
     </members>
 </doc>
