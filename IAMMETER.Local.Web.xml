@@ -9,6 +9,11 @@
             将一个字符串序列化成一个实体的方法
             </summary>
         </member>
+        <member name="P:IAMMETER.Local.Web.AppConfig.Version">
+            <summary>
+            系统版本号
+            </summary>
+        </member>
         <member name="T:IAMMETER.Local.Web.SiteUserValidateMidleware">
             <summary>
             对于需要的api自动校验token，并将用户信息放置到httpcontext.items
@@ -28,7 +33,7 @@
             常用方法
             </summary>
         </member>
-        <member name="M:IAMMETER.Local.Web.Controllers.CommonController.TimezoneList">
+        <member name="M:IAMMETER.Local.Web.Controllers.CommonController.TimezoneList(System.String)">
             <summary>
             Get a list of time zones on the server
             </summary>

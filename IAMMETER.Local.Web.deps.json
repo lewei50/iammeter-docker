@@ -36,6 +36,7 @@
           "Microsoft.EntityFrameworkCore.Sqlite": "5.0.2",
           "Microsoft.EntityFrameworkCore.Tools": "5.0.2",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "5.0.1",
+          "NodaTime": "3.0.3",
           "Quartz.AspNetCore": "3.2.3",
           "Serilog.AspNetCore": "3.4.0",
           "Swashbuckle.AspNetCore": "5.6.3",
@@ -1063,6 +1064,20 @@
         },
         "compile": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
+      "NodaTime/3.0.3": {
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.7.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/NodaTime.dll": {
+            "assemblyVersion": "3.0.3.0",
+            "fileVersion": "3.0.3.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/NodaTime.dll": {}
         }
       },
       "Quartz/3.2.3": {
@@ -2401,6 +2416,7 @@
           "IAMMETER.Local.Basic": "1.0.0",
           "IAMMETER.Local.DTO": "1.0.0",
           "IAMMETER.Local.Models": "1.0.0",
+          "NodaTime": "3.0.3",
           "TimeZoneNames": "4.0.1"
         },
         "runtime": {
@@ -4618,6 +4634,13 @@
       "sha512": "sha512-IvJe1pj7JHEsP8B8J8DwlMEx8UInrs/x+9oVY+oCD13jpLu4JbJU2WCIsMRn5C4yW9+DgkaO8uiVE5VHKjpmdQ==",
       "path": "newtonsoft.json/11.0.2",
       "hashPath": "newtonsoft.json.11.0.2.nupkg.sha512"
+    },
+    "NodaTime/3.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-sTXjtPsRddI6iaRL2iT80zBOiHTnSCy2rEHxobUKvRhr5nt7BbSIPb4cGtVf202OW0glaJMLr/5xg79FIFMHsA==",
+      "path": "nodatime/3.0.3",
+      "hashPath": "nodatime.3.0.3.nupkg.sha512"
     },
     "Quartz/3.2.3": {
       "type": "package",
