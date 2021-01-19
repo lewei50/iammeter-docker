@@ -130,5 +130,13 @@
 "place.overview.energy-yearly":"当年能耗",
 "place.overview.energy-total":"总用能耗",
 "bll.realtime-line":"实时曲线",
-"common.edit":"编辑"
+"common.edit":"编辑",
+"menu.extension":"扩展功能",
+"menu.extension.pvoutput":"PVOutput",
+"bll.place-name":"地点",
+"extension.api-key":"API Key",
+"extension.system-id":"System Id",
+"extension.is-active":"开启状态",
+"extension.add":"添加扩展",
+"extension.edit":"编辑扩展"
 }

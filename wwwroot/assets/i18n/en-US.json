@@ -130,5 +130,13 @@
 "place.overview.energy-yearly":"Yearly Energy",
 "place.overview.energy-total":"Total Energy",
 "bll.realtime-line":"Real-time line",
-"common.edit":"Edit"
+"common.edit":"Edit",
+"menu.extension":"Extensions",
+"menu.extension.pvoutput":"PVOutput",
+"bll.place-name":"Place Name",
+"extension.api-key":"API Key",
+"extension.system-id":"System Id",
+"extension.is-active":"Is active",
+"extension.add":"Add Extension",
+"extension.edit":"Edit Extension"
 }
