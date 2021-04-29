@@ -14,6 +14,11 @@
             系统版本号
             </summary>
         </member>
+        <member name="T:IAMMETER.Local.Web.Base.DeChunkerMiddleware">
+            <summary>
+            去掉transfer-encoding trunked
+            </summary>
+        </member>
         <member name="T:IAMMETER.Local.Web.SiteUserValidateMidleware">
             <summary>
             对于需要的api自动校验token，并将用户信息放置到httpcontext.items
