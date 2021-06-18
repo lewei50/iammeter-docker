@@ -19,6 +19,37 @@
             去掉transfer-encoding trunked
             </summary>
         </member>
+        <member name="M:IAMMETER.Local.Web.MqttServiceExtensions.AddMyMqttService(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            添加自己规范好的
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:IAMMETER.Local.Web.MqttServiceExtensions.GetConnectionInfo(MQTTnet.Server.Status.IMqttClientStatus)">
+            <summary>
+            获取当前的连接信息
+            </summary>
+            <param name="client"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IAMMETER.Local.Web.MqttServiceValidatorFactory.MqttServerOptions(MQTTnet.AspNetCore.AspNetMqttServerOptionsBuilder)">
+            <summary>
+            设置mqtt服务
+            </summary>
+            <param name="mqttServer"></param>
+        </member>
+        <member name="M:IAMMETER.Local.Web.MqttServiceValidatorFactory.ConnectionValidator(MQTTnet.Server.MqttConnectionValidatorContext)">
+            <summary>
+            用户或者sn验证
+            </summary>
+            <param name="c"></param>
+        </member>
+        <member name="M:IAMMETER.Local.Web.MqttServiceValidatorFactory.SubscriptionInterceptor(MQTTnet.Server.MqttSubscriptionInterceptorContext)">
+            <summary>
+            订阅的时候拦截器
+            </summary>
+            <param name="c"></param>
+        </member>
         <member name="T:IAMMETER.Local.Web.SiteUserValidateMidleware">
             <summary>
             对于需要的api自动校验token，并将用户信息放置到httpcontext.items
