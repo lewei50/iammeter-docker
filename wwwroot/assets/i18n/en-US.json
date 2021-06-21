@@ -65,6 +65,8 @@
 "bll.gl":"Power",
 "bll.ydl":"Grid Consumption",
 "bll.kdl":"Exported Energy",
+"bll.pl":"Frequency",
+"bll.glys":"Power Factor",
 "bll.meter.type":"Type",
 "bll.usetype.grid":"Grid",
 "bll.usetype.inverter":"Inverter",

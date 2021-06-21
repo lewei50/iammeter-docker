@@ -65,6 +65,8 @@
 "bll.gl":"功率",
 "bll.ydl":"用电量",
 "bll.kdl":"馈电量",
+"bll.pl":"频率",
+"bll.glys":"功率因数",
 "bll.meter.type":"类型",
 "bll.usetype.grid":"电网",
 "bll.usetype.inverter":"逆变器",
