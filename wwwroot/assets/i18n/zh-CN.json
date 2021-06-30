@@ -140,5 +140,13 @@
 "extension.system-id":"System Id",
 "extension.is-active":"开启状态",
 "extension.add":"添加扩展",
-"extension.edit":"编辑扩展"
+"extension.edit":"编辑扩展",
+"menu.systemsetting":"系统设置",
+"setting.dbtype":"数据库类型",
+"setting.server":"服务器地址",
+"setting.database":"数据库名",
+"setting.user":"用户名",
+"setting.db.tip":"如果要连接的数据库没有被使用过, 保存成功之后请手动重启docker, 系统将对数据进行初始化",
+"setting.port":"端口",
+"place.change-image":"更换展示图片"
 }
