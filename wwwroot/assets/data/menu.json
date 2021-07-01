@@ -1,17 +1,18 @@
 {
-  "menu": [{
+  "menu": [
+    {
       "route": "dashboard",
       "name": "dashboard",
       "type": "link",
       "icon": "dashboard"
-      
     },
     {
       "route": "place",
       "name": "place",
       "type": "sub",
       "icon": "device_hub",
-      "children": [{
+      "children": [
+        {
           "route": "placeList",
           "name": "placelist",
           "type": "link"
@@ -28,7 +29,8 @@
       "name": "extension",
       "type": "sub",
       "icon": "extension",
-      "children": [{
+      "children": [
+        {
           "route": "pvoutput",
           "name": "pvoutput",
           "type": "link"
@@ -40,7 +42,8 @@
       "name": "profile",
       "type": "sub",
       "icon": "account_box",
-      "children": [{
+      "children": [
+        {
           "route": "userSetting",
           "name": "settings",
           "type": "link"
@@ -51,6 +54,12 @@
           "type": "link"
         }
       ]
+    },
+    {
+      "route": "setting",
+      "name": "systemsetting",
+      "type": "link",
+      "icon": "settings"
     }
   ]
 }

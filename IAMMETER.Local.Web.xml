@@ -300,6 +300,18 @@
             <param name="lang"></param>
             <returns></returns>
         </member>
+        <member name="M:IAMMETER.Local.Web.Controllers.UserController.Setting">
+            <summary>
+            Get system settings
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IAMMETER.Local.Web.Controllers.UserController.Setting(IAMMETER.Local.DTO.SettingDTO)">
+            <summary>
+            Set system settings
+            </summary>
+            <returns></returns>
+        </member>
         <member name="M:IAMMETER.Local.Web.Startup.ConfigueMyService(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
             <summary>
             自定义的service

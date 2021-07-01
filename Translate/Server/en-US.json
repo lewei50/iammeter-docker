@@ -25,6 +25,8 @@
 "bll.gl":"Power",
 "bll.ydl":"Grid Consumption",
 "bll.kdl":"Exported Energy",
+"bll.pl":"Frequency",
+"bll.glys":"Power Factor",
 "place.overview.yield":"Yield",
 "place.overview.load":"Load",
 "place.overview.feed-in":"Feed-in",

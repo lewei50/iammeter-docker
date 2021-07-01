@@ -65,6 +65,8 @@
 "bll.gl":"Power",
 "bll.ydl":"Grid Consumption",
 "bll.kdl":"Exported Energy",
+"bll.pl":"Frequency",
+"bll.glys":"Power Factor",
 "bll.meter.type":"Type",
 "bll.usetype.grid":"Grid",
 "bll.usetype.inverter":"Inverter",
@@ -138,5 +140,13 @@
 "extension.system-id":"System Id",
 "extension.is-active":"Is active",
 "extension.add":"Add Extension",
-"extension.edit":"Edit Extension"
+"extension.edit":"Edit Extension",
+"menu.systemsetting":"System Setting",
+"setting.dbtype":"Database Type",
+"setting.server":"Server",
+"setting.database":"Database",
+"setting.user":"User",
+"setting.db.tip":"If the database you want to connect to has not been used, please restart docker manually after the save is successful, the system will initialize the data ",
+"setting.port":"Port",
+"place.change-image":"Change display picture "
 }
