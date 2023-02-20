@@ -81,9 +81,24 @@
             </summary>
             <returns></returns>
         </member>
+        <member name="M:IAMMETER.Local.Web.Controllers.DatalogController.Save(IAMMETER.Local.DTO.Place.Datalog.DatalogSetDTO,System.Nullable{System.Guid})">
+            <summary>
+            Update datalog information or add a new datalog (id:00000000-0000-0000-0000-000000000000)
+            </summary>
+            <param name="id">Place Id</param>
+            <param name="dto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IAMMETER.Local.Web.Controllers.DatalogController.Delete(System.Nullable{System.Guid})">
+            <summary>
+            Delete a datalog config by id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
         <member name="M:IAMMETER.Local.Web.Controllers.ExtensionsController.Save(IAMMETER.Local.DTO.Place.ExtensionSetDTO,System.Nullable{System.Guid})">
             <summary>
-            Update place information or add a new place (id:00000000-0000-0000-0000-000000000000)
+            Update extension information or add a new extension (id:00000000-0000-0000-0000-000000000000)
             </summary>
             <param name="id">Place Id</param>
             <param name="dto"></param>
@@ -91,7 +106,7 @@
         </member>
         <member name="M:IAMMETER.Local.Web.Controllers.ExtensionsController.Delete(System.Nullable{System.Guid})">
             <summary>
-            Delete a place by id
+            Delete an extension by id
             </summary>
             <param name="id"></param>
             <returns></returns>

@@ -135,6 +135,7 @@
 "common.edit":"编辑",
 "menu.extension":"扩展功能",
 "menu.extension.pvoutput":"PVOutput",
+"menu.extension.datalog":"数据记录仪和报警",
 "bll.place-name":"地点",
 "extension.api-key":"API Key",
 "extension.system-id":"System Id",
@@ -148,5 +149,8 @@
 "setting.user":"用户名",
 "setting.db.tip":"如果要连接的数据库没有被使用过, 保存成功之后请手动重启docker, 系统将对数据进行初始化",
 "setting.port":"端口",
-"place.change-image":"更换展示图片"
+"place.change-image":"更换展示图片",
+"common.ipaddress":"IP地址",
+"datalog.add":"添加记录仪",
+"datalog.edit":"编辑记录仪"
 }

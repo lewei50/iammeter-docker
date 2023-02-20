@@ -135,6 +135,7 @@
 "common.edit":"Edit",
 "menu.extension":"Extensions",
 "menu.extension.pvoutput":"PVOutput",
+"menu.extension.datalog":"Data log & alarm",
 "bll.place-name":"Place Name",
 "extension.api-key":"API Key",
 "extension.system-id":"System Id",
@@ -148,5 +149,9 @@
 "setting.user":"User",
 "setting.db.tip":"If the database you want to connect to has not been used, please restart docker manually after the save is successful, the system will initialize the data ",
 "setting.port":"Port",
-"place.change-image":"Change display picture "
+"place.change-image":"Change display picture ",
+"common.ipaddress":"IP address",
+"datalog.add":"Add logger",
+"datalog.edit":"Edit logger"
+
 }
