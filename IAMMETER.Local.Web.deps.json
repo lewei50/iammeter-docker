@@ -516,12 +516,6 @@
           "Microsoft.EntityFrameworkCore.Relational": "7.0.2",
           "Microsoft.Extensions.DependencyModel": "7.0.0",
           "Mono.TextTemplating": "2.2.1"
-        },
-        "runtime": {
-          "lib/net6.0/Microsoft.EntityFrameworkCore.Design.dll": {
-            "assemblyVersion": "7.0.2.0",
-            "fileVersion": "7.0.222.58006"
-          }
         }
       },
       "Microsoft.EntityFrameworkCore.Proxies/7.0.2": {
@@ -845,12 +839,6 @@
       "Mono.TextTemplating/2.2.1": {
         "dependencies": {
           "System.CodeDom": "4.4.0"
-        },
-        "runtime": {
-          "lib/netstandard2.0/Mono.TextTemplating.dll": {
-            "assemblyVersion": "2.2.0.0",
-            "fileVersion": "2.2.1.1"
-          }
         }
       },
       "MQTTnet/3.0.15": {
@@ -1497,14 +1485,7 @@
         }
       },
       "System.Buffers/4.5.1": {},
-      "System.CodeDom/4.4.0": {
-        "runtime": {
-          "lib/netstandard2.0/System.CodeDom.dll": {
-            "assemblyVersion": "4.0.0.0",
-            "fileVersion": "4.6.25519.3"
-          }
-        }
-      },
+      "System.CodeDom/4.4.0": {},
       "System.Collections/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.1",
@@ -2352,7 +2333,10 @@
           "UAParser": "3.1.47"
         },
         "runtime": {
-          "GW.Basic.dll": {}
+          "GW.Basic.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "IAMMETER.Local.BLL/1.0.0": {
@@ -2366,7 +2350,10 @@
           "TimeZoneNames": "6.0.0"
         },
         "runtime": {
-          "IAMMETER.Local.BLL.dll": {}
+          "IAMMETER.Local.BLL.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "IAMMETER.Local.DTO/1.0.0": {
@@ -2374,7 +2361,10 @@
           "GW.Basic": "1.0.0"
         },
         "runtime": {
-          "IAMMETER.Local.DTO.dll": {}
+          "IAMMETER.Local.DTO.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "IAMMETER.Local.Migrations.MySql/1.0.0": {
@@ -2383,7 +2373,10 @@
           "Pomelo.EntityFrameworkCore.MySql": "7.0.0"
         },
         "runtime": {
-          "IAMMETER.Local.Migrations.MySql.dll": {}
+          "IAMMETER.Local.Migrations.MySql.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "IAMMETER.Local.Models/1.0.0": {
@@ -2394,7 +2387,10 @@
           "Microsoft.EntityFrameworkCore.Relational": "7.0.2"
         },
         "runtime": {
-          "IAMMETER.Local.Models.dll": {}
+          "IAMMETER.Local.Models.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "MQTTnet.AspNetCore.AttributeRouting/1.0.0": {
@@ -2403,7 +2399,10 @@
           "MQTTnet.AspNetCore": "3.0.15"
         },
         "runtime": {
-          "MQTTnet.AspNetCore.AttributeRouting.dll": {}
+          "MQTTnet.AspNetCore.AttributeRouting.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }

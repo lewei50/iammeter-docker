@@ -277,6 +277,12 @@
             <param name="dto"></param>
             <returns></returns>
         </member>
+        <member name="M:IAMMETER.Local.Web.Controllers.SensorController.SaveDataToCSV(IAMMETER.Local.DTO.Place.UploadDataDTO)">
+            <summary>
+            如果指定目录存在的话，将数据保存到CSV文件中
+            </summary>
+            <param name="dto"></param>
+        </member>
         <member name="M:IAMMETER.Local.Web.Controllers.UserController.Login(IAMMETER.Local.DTO.User.UserLoginDTO)">
             <summary>
             User login to get token.
